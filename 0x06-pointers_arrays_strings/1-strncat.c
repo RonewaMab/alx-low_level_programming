@@ -5,12 +5,13 @@
  * @dest: The destination value
  * @src: The source value
  * @n: The limit of concatenation
- *
  * Return: A pointer to the resulting string dest
  */
+
 char *_strncat(char *dest, char *src, int n)
 {
 	int dlen = 0, j = 0;
+
 	while (dest[dlen])
 	{
 		dlen++
@@ -19,7 +20,9 @@ char *_strncat(char *dest, char *src, int n)
 	while (j < n && src[j])
 	{
 		dest[dlen] = src[j];
+
 		dlen++
+
 		j++;
 	
 	}
