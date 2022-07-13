@@ -1,1 +1,1 @@
-My first c programm
+array read me
