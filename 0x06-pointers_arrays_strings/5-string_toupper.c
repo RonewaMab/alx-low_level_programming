@@ -1,12 +1,23 @@
-int _putchar(char c);
-void reset_to_98(int *n);
-void swap_int(int *a, int *b);
-int _strlen(char *s);
-void _puts(char *str);
-void print_rev(char *s);
-void rev_string(char *s);
-void puts2(char *str);
-void puts_half(char *str);
-void print_array(int *a, int n);
-char *_strcpy(char *dest, char *src);
-int _atoi(char *s);
+#include "main.h"
+
+/**
+ *string_toupper - Changes all lowercase letters to uppercase
+ *@p: The string will be modified
+ *Return: char var
+ */
+char *string_toupper(char *p)
+{
+	int a = 0;
+
+	while (p[a])
+	{
+		if (p[a] >= 97 && p[a] <= 122)
+		{
+			p[a] -= 32;
+		}
+
+		a++;
+	}
+
+	return (p);
+}
