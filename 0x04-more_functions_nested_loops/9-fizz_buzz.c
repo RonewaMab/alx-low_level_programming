@@ -3,7 +3,7 @@
 
 /**
  *main - Prints a Fizz Buzz program
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -32,3 +32,9 @@ int main(void)
 		{
 			printf(" ");
 		}
+	}
+
+	printf("\n");
+
+	return (0);
+}
