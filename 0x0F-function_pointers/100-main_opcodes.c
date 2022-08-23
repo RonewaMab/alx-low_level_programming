@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <udis86.h>
 
-
 /**
  *main - ...
  *@argc: ...
@@ -19,13 +18,11 @@ int main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
-
 		val = atoi(argv[1]);
 
 
 		if (val < 0)
 		{
-
 			printf("Error\n");
 			exit(2);
 		}
@@ -39,14 +36,11 @@ int main(int argc, char *argv[])
 
 		while (ud_disassemble(&ud_obj))
 		{
-
 			printf("\t%s\n", ud_insn_hex(&ud_obj));
 		}
 	}
 
-
 	return (0);
-
 }
 
 
